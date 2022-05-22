@@ -30,15 +30,7 @@ public class CalculateVector2DDistanceController {
         // Setup Variables
         try
         {
-            float x1 = Float.parseFloat(X1TextField.getText());
-            float y1 = Float.parseFloat(Y1TextField.getText());
-            float x2 = Float.parseFloat(X2TextField.getText());
-            float y2 = Float.parseFloat(Y2TextField.getText());
-            Vector2D point1 = new Vector2D(x1, y1);
-            Vector2D point2 = new Vector2D(x2, y2);
 
-            float distance = Utility.Distance(point1, point2);
-            ResultTextField.setText(String.valueOf(distance));
         }
         catch (Exception e) {
             ResultTextField.setText("Please Enter Valid Numbers");
